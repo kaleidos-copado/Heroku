@@ -51,7 +51,7 @@ app.get('/api/product',(req, res) =>{
   if(err) return res.status(500).send({message:`Error al realizar la peticion${err}`});
   if(!products) return res.status(404).send({message:`No existen productos`});
   //res.status(200).send( {products:[products]})
-  console.log(products);
+  //console.log(products);
   res.render('products',{products});
 }).lean();
   
